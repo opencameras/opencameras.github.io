@@ -228,8 +228,10 @@
                   <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
   <span class="hljs-attr">&quot;uuid&quot;</span>: <span class="hljs-string">&quot;123e4567-e89b-12d3-a456-426614174000&quot;</span>,
   <span class="hljs-attr">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer (int64)&quot;</span>,
-  <span class="hljs-attr">&quot;resolution&quot;</span>: <span class="hljs-string">&quot;1024x768&quot;</span>,
-  <span class="hljs-attr">&quot;video_codec&quot;</span>: <span class="hljs-string">&quot;h.265&quot;</span>
+  <span class="hljs-attr">&quot;resolution&quot;</span>: <span class="hljs-string">&quot;1920&#xD7;1080&quot;</span>,
+  <span class="hljs-attr">&quot;fps&quot;</span>: <span class="hljs-number">30</span>,
+  <span class="hljs-attr">&quot;video_codec&quot;</span>: <span class="hljs-string">&quot;H.265&quot;</span>,
+  <span class="hljs-attr">&quot;audio_codec&quot;</span>: <span class="hljs-string">&quot;G.711&quot;</span>
 }
 </code></pre>
                   <!-- </div> -->
@@ -1293,16 +1295,34 @@
                     <dd>
                       <p>camera resolution. Its format is &quot;widthxheight&quot;</p>
                     </dd>
+                    <dt data-property-name="fps">
+                      <span class="json-property-name">fps:</span>
+                      <span class="json-property-type">integer</span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>frame per second</p>
+                    </dd>
                     <dt data-property-name="video_codec">
                       <span class="json-property-name">video_codec:</span>
                       <span class="json-property-type">string</span>
                       <span class="json-property-enum" title="Possible values">, x &isin; {
-                        <span class="json-property-enum-item">h.264</span> ,
-                        <span class="json-property-enum-item">h.265</span> } </span>
+                        <span class="json-property-enum-item">H.264</span> ,
+                        <span class="json-property-enum-item">H.265</span> } </span>
                       <span class="json-property-range" title="Value limits"></span>
                     </dt>
                     <dd>
                       <p>video codec</p>
+                    </dd>
+                    <dt data-property-name="audio_codec">
+                      <span class="json-property-name">audio_codec:</span>
+                      <span class="json-property-type">string</span>
+                      <span class="json-property-enum" title="Possible values">, x &isin; {
+                        <span class="json-property-enum-item">G.711</span> } </span>
+                      <span class="json-property-range" title="Value limits"></span>
+                    </dt>
+                    <dd>
+                      <p>audio codec</p>
                     </dd>
                   </dl>
                 </section>
@@ -1313,8 +1333,10 @@
                   <!-- <div class="hljs"> --><pre><code class="hljs lang-json">{
   <span class="hljs-attr">&quot;uuid&quot;</span>: <span class="hljs-string">&quot;123e4567-e89b-12d3-a456-426614174000&quot;</span>,
   <span class="hljs-attr">&quot;uptime&quot;</span>: <span class="hljs-string">&quot;integer (int64)&quot;</span>,
-  <span class="hljs-attr">&quot;resolution&quot;</span>: <span class="hljs-string">&quot;1024x768&quot;</span>,
-  <span class="hljs-attr">&quot;video_codec&quot;</span>: <span class="hljs-string">&quot;h.265&quot;</span>
+  <span class="hljs-attr">&quot;resolution&quot;</span>: <span class="hljs-string">&quot;1920&#xD7;1080&quot;</span>,
+  <span class="hljs-attr">&quot;fps&quot;</span>: <span class="hljs-number">30</span>,
+  <span class="hljs-attr">&quot;video_codec&quot;</span>: <span class="hljs-string">&quot;H.265&quot;</span>,
+  <span class="hljs-attr">&quot;audio_codec&quot;</span>: <span class="hljs-string">&quot;G.711&quot;</span>
 }
 </code></pre>
                   <!-- </div> -->
